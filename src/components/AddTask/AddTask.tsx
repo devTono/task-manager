@@ -20,12 +20,13 @@ export default function AddTask() {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="w-full my-1 p-2 flex justify-between bg-gray-300">
       <input
         type="text"
         value={taskName}
         onChange={(e) => setTaskName(e.target.value)}
         placeholder="할 일을 입력하세요"
+        className="pl-4"
       />
       <button type="submit">추가</button>
     </form>
