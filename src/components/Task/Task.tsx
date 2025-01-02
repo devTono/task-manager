@@ -25,7 +25,7 @@ export default function Task({ task }: TaskProps) {
           {task.name}
         </label>
       </div>
-      <button onClick={() => dispatch(deleteTask(task.id))}>삭제</button>
+      <button onClick={() => dispatch(deleteTask(task.id))} className="whitespace-nowrap">삭제</button>
     </div>
   );
 }
